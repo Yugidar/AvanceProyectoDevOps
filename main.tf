@@ -63,7 +63,6 @@ resource "aws_security_group" "linux_sg" {
     to_port     = 22
     protocol    = "tcp"
     cidr_blocks = ["10.10.0.0/24"]
-    security_groups = [aws_security_group.linux_sg.id]
   }
 
   #Trafico HTTP
