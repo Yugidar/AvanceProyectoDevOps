@@ -54,7 +54,7 @@ resource "aws_route_table_association" "asociacion_AP" {
 #GRUPO DE SEGURIDAD
 resource "aws_security_group" "linux_sg" {
   name        = "Grupo de seguridad para la pagina web del proyecto"
-  description = "Entrada de SSH y Salida de HTTP
+  description = "Entrada de SSH y Salida de HTTP"
   vpc_id      = aws_vpc.vpc_AP.id
 
   #Trafico SSH
